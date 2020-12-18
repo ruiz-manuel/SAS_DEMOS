@@ -29,13 +29,13 @@ The fact thet Street View images have resolution degradation allows us to solve 
 #### Preprocessing
 Since we are interseted in detecting resolution degradation, we are not going to pass the whole image to the CNN, but only information about the resolution. This was achieved with a Sobel edge detection filter. A laplacian filter was also considered but yielded lower accuracy.
 
-Given this, the pre-processing techniques applied are:
--Grayscale (Since resolution is color independent)
--Sobel edge detection 3x3 kernel (the sharper the edge, the better the resolution)
+Given this, the pre-processing techniques applied are: \
+-Grayscale (Since resolution is color independent) \
+-Sobel edge detection 3x3 kernel (the sharper the edge, the better the resolution) \
 -Resize to 1120x1120  (Large image size to avoid loosing edge information)
 
-Also, data augmentation techniques were implemented to triplicate the data set:
--Mirror images
+Also, data augmentation techniques were implemented to triplicate the data set: \
+-Mirror images \
 -Crop & resize
 
 #### Convolutional Neural Network
@@ -48,24 +48,29 @@ The defined architecture has four groups of layers, each group consisting of:\
 The architecture is as follows: \
 -Input 1120x1120x1 \
 -Max pooling 5x5    Output:224x224 \
+
 -First group: \
    7x7x10 Convolution \
    Batch Normalization \
    3X3 Max pooling \
    Output: 56x56 \
+   
 -Second group: \
    3x3x20 Convolution \
    Batch Normalization \
    2x2 Max pooling \
    Output: 14x14 \
+   
 -Third group: \
    1x1x128 Convolution \
    Batch Normalization \
    2x2 Mean pooling \
    Output: 7x7 \
+   
 -Fourth group: \
    1x1x256 Convolution \
    Batch Normalization \
    7x7 Mean pooling \
    Output: 1x1x256 \
+   
 -Output layer: 2 neuron softmax \
