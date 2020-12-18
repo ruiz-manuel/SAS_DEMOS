@@ -40,7 +40,7 @@ Also, data augmentation techniques were implemented to triplicate the data set:
 
 #### Convolutional Neural Network
 
-The defined architecture has four groups of layers, each group consisting of:
+The defined architecture has four groups of layers, each group consisting of:\
 -Convolutional layer
 -Batch normalization layer
 -Pooling layer
