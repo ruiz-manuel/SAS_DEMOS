@@ -22,4 +22,4 @@ If you have ever seen a GoPro picture, well those are wide-angle pictures. These
 What this process does is essentially stretch the image in a way that the center of the image stays the same, but the edges are zoomed-in. This way, the relative sizes of objects come back to normal and straight lines are straight again. There is, however, a price to pay when doing this: because the edges are zoomed in, they have lower resolution than the center of the image. This is exactly what we are looking for to determine that the image is taken from Street View
 
 
-![Alt text](/Doc_Resources/zoom.jpg?raw=true,width=100 "Resolution degradation")
+![Alt text](/Doc_Resources/zoom.jpg?raw=true =100x100 "Resolution degradation")
