@@ -26,4 +26,4 @@ What this process does is essentially stretch the image in a way that the center
 
 ![Alt text][zoom]{height=400px width=500px}
 [//]: # (Image References)
-[zoom]: /Doc_Resources/zoom.jpg "This is a tree"
+[zoom]: /Doc_Resources/zoom.jpg?raw=true "This is a tree"
